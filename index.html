@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <!-- Start Setting box -->
+    <div class="setting-box">
+      <div class="toggle-setting">
+        <i class="fa fa-gear"></i>
+      </div>
+      <div class="setting-container">
+        <div class="option-box">
+          <h4>colors</h4>
+          <ul class="colors-list">
+            <li class="active" data-color="#eab308"></li>
+            <li data-color="#8a2be2"></li>
+            <li data-color="#a52a2a"></li>
+            <li data-color="#7fff00"></li>
+            <li data-color="#8b008b"></li>
+          </ul>
+        </div>
+        <div class="option-box">
+          <h4>Random Background</h4>
+          <div class="random-background">
+            <span class="yes" data-bg="yes">Yes</span>
+            <span class="no active" data-bg="no">No</span>
+          </div>
+        </div>
+        <button class="reset">Reset</button>
+      </div>
+    </div>
+    <!-- End Setting box -->
+
+    <!-- Start Landing Page -->
+    <div class="landing-page">
+      <div class="overlay"></div>
+      <div class="container">
+        <header>
+          <div class="logo">About<span>Me.</span></div>
+          <nav class="links">
+            <a href="#" class="active">home</a>
+            <a href="#aboutme">about</a>
+            <a href="#skills">skills</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#contact">contact</a>
+          </nav>
+          <i
+            class="bi bi-list"
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            role="button"
+          ></i>
+          <aside
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <nav class="offcanvas-body">
+              <a href="#"><i class="bi bi-house-door-fill"></i>home</a>
+              <a href="#aboutme"
+                ><i class="bi bi-person-vcard-fill"></i>about</a
+              >
+              <a href="#skills"
+                ><i class="bi bi-bookmark-star-fill"></i>skills</a
+              >
+              <a href="#portfolio"><i class="bi bi-card-image"></i>portfolio</a>
+              <a href="#contact"><i class="bi bi-telephone-fill"></i>contact</a>
+            </nav>
+          </aside>
+        </header>
+        <div class="intro-text">
+          <p class="first">hello, welcome</p>
+          <h1>I'm Ibrahim Abou Al-S3ood</h1>
+          <p class="last">Junior Web Developer</p>
+          <a class="btn" href="#contact">contact us</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Landing Page -->
+
+    <!-- Start About Me Section -->
+    <div class="container">
+      <section class="aboutme" id="aboutme">
+        <div class="image">
+          <div class="image-box">
+            <img src="imgs/me.jpeg" alt="" />
+          </div>
+        </div>
+        <div class="description">
+          <a href="#"
+            ><h2>About<span>Me.</span></h2></a
+          >
+          <p>
+            Java Developer with a bachelor's in Computer Science, skilled in
+            software development. <br />Have programming skills like Java, SQL,
+            HTML, CSS, Bootstrap and JavaScript. <br />
+            Aware of the principles like Java 8, Functional programming, OOP,
+            SOLID principles and Design Pattern
+          </p>
+          <a href="#contact"><button class="btn">contact us</button></a>
+        </div>
+      </section>
+    </div>
+
+    <!-- End About Me Section -->
+
+    <!-- Start Skills Sectoin -->
+    <div class="container">
+      <section class="skills" id="skills">
+        <div class="skills-container">
+          <a href="#"
+            ><h2>My <span>Skills</span></h2></a
+          >
+          <p>
+            Have programming skills like Java, SQL, HTML, CSS, Bootstrap and
+            JavaScript.
+          </p>
+          <div class="skill-box">
+            <div class="skill-name">HTML</div>
+            <div class="skill-progress">
+              <span data-progress="99%"></span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-name">CSS</div>
+            <div class="skill-progress">
+              <span data-progress="88%"></span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-name">Bootstrap</div>
+            <div class="skill-progress">
+              <span data-progress="98%"></span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-progress">
+              <span data-progress="70%"></span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-name">Java</div>
+            <div class="skill-progress">
+              <span data-progress="90%"></span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-name">PostgreSQL</div>
+            <div class="skill-progress">
+              <span data-progress="98%"></span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-name">MySQL</div>
+            <div class="skill-progress">
+              <span data-progress="90%"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- End Skills Section -->
+
+    <!-- Start Portfolio -->
+    <div class="container">
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <a href="#"
+            ><h2>My <span>Portfolio</span></h2></a
+          >
+          <div class="images-box">
+            <div class="main-img">
+              <img src="imgs/05.jpg" alt="main-image" />
+            </div>
+            <div class="secondary-imgs">
+              <img src="imgs/01.jpg" alt="image_one" />
+              <img src="imgs/02.jpg" alt="image_two" />
+              <img src="imgs/03.jpg" alt="image_three" />
+              <img src="imgs/04.jpg" alt="image_four" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- End Portfolio -->
+
+    <!-- Start Contact -->
+    <div class="container">
+      <section class="contact" id="contact">
+        <div class="container">
+          <a href="#"
+            ><h2>Contact <span>Me</span></h2></a
+          >
+          <p>You can contact us using any of the following means</p>
+          <div class="contact-info">
+            <div class="personal-info">
+              <div class="address"><span>Address: </span> Cairo, Egypt</div>
+              <div class="phone"><span>Phone: </span> (+20) 1125561989</div>
+              <div class="mail">
+                <span>E mail: </span> ibrahimaboalsoud1@gmail.com
+              </div>
+            </div>
+            <div class="text-area">
+              <input type="text" placeholder="Name" />
+              <textarea name="" id="" placeholder="Meassage"></textarea>
+              <button class="btn">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- End Contact -->
+
+    <!-- Start footer -->
+    <div class="container">
+      <footer>
+        <a href="#"><h1>AboutMe.</h1></a>
+        <p>
+          Copyright &copy; 2025 AboutMe. All rights reserverd.
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Design&colon;</span>
+          Abou Al-S3ood
+        </p>
+        <div class="icons">
+          <a href="#"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://github.com/Aboals3ood"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/ibrahim-aboals3ood-89264a224"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="https://www.facebook.com/share/1RAR7Vjstx/?mibextid=qi2Omg"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- End footer -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
